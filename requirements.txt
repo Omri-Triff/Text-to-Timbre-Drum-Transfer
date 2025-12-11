@@ -1,11 +1,8 @@
-# דרישות ליבה לפרויקט
 torch
 torchaudio
 librosa
 numpy
 scipy
-
-# דרישות למודלי Diffusers (AudioLDM, Stable Audio Open)
 diffusers
 transformers
 accelerate
