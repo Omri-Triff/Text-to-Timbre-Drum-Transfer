@@ -1,4 +1,4 @@
-# Text-to-Timbre Drum Transfer
+# Drum-Fusion
 **Controllable Drum Audio Synthesis via Beatboxing and Text Prompts**
 
 This project builds a **two-stage generative audio pipeline** that asks:
@@ -35,7 +35,7 @@ TRIA takes:
 ## Repository structure
 ```
 
-Text-to-Timbre-Drum-Transfer/
+Drum-Fusion/
 ├─ dataset/
 │  └─ beatbox_*.wav                 # Example beatbox recordings
 │
