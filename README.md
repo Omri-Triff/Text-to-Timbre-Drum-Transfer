@@ -66,7 +66,6 @@ Text-to-Timbre-Drum-Transfer/
 > Tip: For cleaner timbre references, keep prompts drum-specific (avoid “melody”, “vocals”, “bass”, etc.).
 
 ---
-````
 
 ### 2) Install Python dependencies (typical)
 
