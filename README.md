@@ -1,4 +1,3 @@
-```markdown
 # Text-to-Timbre Drum Transfer
 **Controllable Drum Audio Synthesis via Beatboxing and Text Prompts**
 
