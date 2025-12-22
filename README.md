@@ -53,6 +53,8 @@ Text-to-Timbre-Drum-Transfer/
 ---
 
 ## Steps
+### 1) Open FullPipeline file
+
 1. Open the notebook in **Google Colab** (GPU runtime needed).
 2. Run cells in order.
 3. When prompted:
