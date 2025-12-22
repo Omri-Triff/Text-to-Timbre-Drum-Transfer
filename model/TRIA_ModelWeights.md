@@ -98,4 +98,3 @@ Then re-run the download code.
 * If your code can’t find the weights later, verify the downloaded paths match the expected structure under `pretrained/`.
 
 - or add a “Versioning” table (checkpoint step, date, notes) for reproducibility.
-```
