@@ -1,0 +1,100 @@
+# Pretrained Models: TextDrums (TRIA + Tokenizer)
+
+This project downloads its pretrained model weights from the Hugging Face Hub:
+
+https://huggingface.co/canfious/TextDrums
+
+## What’s Included
+
+The Hugging Face repo contains:
+
+- **TRIA checkpoint**  
+  `tria/small_musdb_moises_2b/80000/model.pt` (172MB)
+
+- **Tokenizer (DAC)**  
+  `tokenizer/dac/dac_44.1kHz_7.7kbps.pt` (307MB)
+
+These files are downloaded automatically by the pipeline into the local folder:
+
+```
+
+pretrained/
+├─ tria/
+│  └─ small_musdb_moises_2b/
+│     └─ 80000/
+│        └─ model.pt
+└─ tokenizer/
+└─ dac/
+└─ dac_44.1kHz_7.7kbps.pt
+
+````
+
+---
+
+## How to Download (Python)
+
+You can download the weights directly using `huggingface_hub`:
+
+```python
+import os
+from huggingface_hub import hf_hub_download
+
+REPO_ID = "canfious/TextDrums"
+
+# Create expected directories
+os.makedirs("pretrained/tria/small_musdb_moises_2b/80000", exist_ok=True)
+os.makedirs("pretrained/tokenizer/dac", exist_ok=True)
+
+# Download TRIA model
+model_path = hf_hub_download(
+    repo_id=REPO_ID,
+    filename="tria/small_musdb_moises_2b/80000/model.pt",
+    local_dir="pretrained",
+    local_dir_use_symlinks=False
+)
+print("TRIA model downloaded to:", model_path)
+
+# Download tokenizer
+tokenizer_path = hf_hub_download(
+    repo_id=REPO_ID,
+    filename="tokenizer/dac/dac_44.1kHz_7.7kbps.pt",
+    local_dir="pretrained",
+    local_dir_use_symlinks=False
+)
+print("Tokenizer downloaded to:", tokenizer_path)
+````
+
+---
+
+## Requirements
+
+Install the required package:
+
+```bash
+pip install huggingface_hub
+```
+
+---
+
+## Private Repo Access (Optional)
+
+If the Hugging Face repository is private, authenticate first:
+
+```bash
+huggingface-cli login
+```
+
+Then re-run the download code.
+
+---
+
+## Notes / Troubleshooting
+
+* If you change the Hugging Face owner/repo name, update:
+
+  ```python
+  REPO_ID = "canfious/TextDrums"
+  ```
+* If your code can’t find the weights later, verify the downloaded paths match the expected structure under `pretrained/`.
+
+- or add a “Versioning” table (checkpoint step, date, notes) for reproducibility.
