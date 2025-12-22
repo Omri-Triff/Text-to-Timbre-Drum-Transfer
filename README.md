@@ -4,31 +4,31 @@
 This project builds a **two-stage generative audio pipeline** that asks:
 1) **Beatbox** a rhythm (rhythmic control)  
 2) **Type** a text prompt for the drum style (timbral control)  
-…and get a synthesized **drum performance** that follows your rhythm while matching the requested style. :contentReference[oaicite:2]{index=2}
+…and get a synthesized **drum performance** that follows your rhythm while matching the requested style. 
 
-> Core idea: generate a **timbre reference** from text (AudioLDM), then use **TRIA** to transfer the beatbox rhythm onto that timbre. :contentReference[oaicite:3]{index=3}
+> Core idea: generate a **timbre reference** from text (AudioLDM), then use **TRIA** to transfer the beatbox rhythm onto that timbre.
 
 ---
 
 ## What this does
 - **Input**:
   - Beatbox WAV (typically 5–10 seconds)
-  - Text prompt describing drum style (e.g., “lo-fi hip-hop drums”, “heavy metal kit”) :contentReference[oaicite:4]{index=4}
+  - Text prompt describing drum style (e.g., “lo-fi hip-hop drums”, “heavy metal kit”)
 - **Output**:
-  - A generated drum WAV that preserves the rhythm and reflects the prompt’s style. :contentReference[oaicite:5]{index=5}
+  - A generated drum WAV that preserves the rhythm and reflects the prompt’s style. 
 
 ---
 
 ## How it works (Pipeline)
 ### Stage 1 — Text → Drum timbre reference (AudioLDM)
 We generate a short **drum loop / timbre reference** conditioned on the user’s text prompt.  
-This reference acts like the “drum kit sound palette” for the next stage. :contentReference[oaicite:6]{index=6}
+This reference acts like the “drum kit sound palette” for the next stage. 
 
 ### Stage 2 — Beatbox rhythm transfer (TRIA)
 TRIA takes:
 - **Rhythm input**: your beatbox
 - **Timbre reference**: the generated “drums.wav”  
-…and outputs a realistic drum track that matches the beatbox rhythm using the timbre from the reference. :contentReference[oaicite:7]{index=7}
+…and outputs a realistic drum track that matches the beatbox rhythm using the timbre from the reference. 
 
 ---
 
