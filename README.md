@@ -124,11 +124,10 @@ We aim to:
 
 ## References
 
-* **TRIA: The Rhythm In Anything** (O’Reilly et al., 2025) 
-* **Stable Audio Open** (Stability AI, 2024) 
+* **TRIA: The Rhythm In Anything** (O’Reilly et al., 2025)
+  https://github.com/interactiveaudiolab/tria
 * **AudioLDM** (Liu et al., 2023) 
-* **AudioLDM 2** (Liu et al., 2023) 
-* **Tango / Tango 2** (Chen et al., 2023–2024) 
+* **AudioLDM 2** (Liu et al., 2024) 
 
 ---
 
