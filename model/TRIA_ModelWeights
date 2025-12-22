@@ -1,8 +1,11 @@
+```markdown
 # Pretrained Models: TextDrums (TRIA + Tokenizer)
 
 This project downloads its pretrained model weights from the Hugging Face Hub:
 
 https://huggingface.co/canfious/TextDrums
+
+---
 
 ## What’s Included
 
@@ -85,6 +88,4 @@ huggingface-cli login
 ```
 
 Then re-run the download code.
-
----
 
